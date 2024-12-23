@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
-import { algolia, head, nav, sidebar, markdown, socialLinks } from './configs'
+
 import { groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+
+import { algolia, head, markdown, nav, sidebar, socialLinks } from './configs'
 
 // 导出默认配置
 export default defineConfig({
@@ -49,14 +51,7 @@ export default defineConfig({
           android: 'logos:android-icon'
         }
       })
-    ],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: 'modern'
-        }
-      }
-    }
+    ]
   },
 
   themeConfig: {
