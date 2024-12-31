@@ -7,7 +7,7 @@ import { algolia, head, markdown, nav, sidebar, socialLinks } from './configs'
 // 导出默认配置
 export default defineConfig({
   // 站点名称
-  title: 'EasyPay简付',
+  title: 'EasyPay 简付',
   // 站点语言
   lang: 'zh-CN',
   // 站点介绍
@@ -21,7 +21,7 @@ export default defineConfig({
   metaChunk: true,
 
   // 站点地图
-  sitemap: { hostname: 'https://docs.hhddg.top' },
+  sitemap: { hostname: 'https://doc.theojs.cn' },
 
   // markdown-it插件配置
   markdown,
@@ -34,6 +34,13 @@ export default defineConfig({
 
   // 开启后网址后缀无'html'
   cleanUrls: true,
+
+  // vue配置
+  vue: {
+    template: {
+      compilerOptions: { isCustomElement: (tag) => tag === 'iconify-icon' }
+    }
+  },
 
   // vite插件
   vite: {
@@ -66,7 +73,8 @@ export default defineConfig({
 
     // GitHub编辑页面
     editLink: {
-      pattern: 'https://github.com/hhd66624/EasyPay/edit/main/content/:path',
+      pattern:
+        'https://github.com/Theo-Messi/Theo-Docs/edit/main/content/:path',
       text: '为此页提供修改建议'
     },
 
