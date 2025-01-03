@@ -14,6 +14,6 @@ export const nav: DefaultTheme.NavItem[] = [
     activeMatch: '^/monitor/'
   },
   { text: '系统配置', link: '/system/introduction', activeMatch: '^/system/' },
-  { text: '规则配置', link: '/example/ruleTree', activeMatch: '^/example/' },
-  { text: '云端服务', link: '/cloud/tutorial', activeMatch: '^/cloud/' }
+  { text: '规则配置', link: '/example/ruleTree', activeMatch: '^/example/' }
+  // { text: '云端服务', link: '/cloud/tutorial', activeMatch: '^/cloud/' }
 ]

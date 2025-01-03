@@ -62,8 +62,8 @@ export function Sidebar_thoroughfare(): SidebarItem[] {
       collapsed: true,
       base: '/thoroughfare/summary/',
       items: [
-        { text: '系统支付配置', link: 'tutorial' },
-        { text: '支付宝应用及接口私匙申请', link: 'currency' },
+        { text: '系统支付方式', link: 'tutorial' },
+        { text: '支付宝私匙申请', link: 'currency' },
         { text: 'v免签源码', link: 'v-sign' },
         { text: '银联前置', link: 'union-pre-front' },
         { text: '京东收银台', link: 'jd-pay' }
